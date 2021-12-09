@@ -6,7 +6,7 @@ RUN apk update \
     && apk add \
     tzdata \
     mongodb \
-    && cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && apk del tzdata \
     && rm -rf /var/cache/apk/*
